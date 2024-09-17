@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Farm-to-Customer Marketplace</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header>
+    <div class="logo">FarmConnect</div>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li> 
+        <li class="dropdown">
+          <a href="#">Categories</a>
+          <div class="dropdown-content">
+            <a href="#">Fruits & Vegetables</a>
+            <a href="#">Dairy Products</a>
+            <a href="#">Grains & Pulses</a>
+            <a href="#">Organic Products</a>
+            <a href="#">Spices & Herbs</a>
+          </div>
+        </li>
+        <li><a href="#">Farmer Registration</a></li>
+        <li><a href="#">Customer Registration</a></li>
+        <li><a href="#">Login</a></li>
+        <li><a href="#">Cart</a></li>
+      </ul>
+    </nav>
+    <div class="search-bar">
+      <input type="text" placeholder="Search for products">
+      <button>Search</button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Fresh from the Farm to Your Table</h1>
+      <p>Connecting farmers directly with customers</p>
+      <button>Explore Products</button>
+      <button>Sell Your Produce</button>
+    </div>
+  </section>
+
+  <!-- Product Listings Section -->
+  <section class="product-listings">
+    <h2>Featured Products</h2>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="apple.jpg" alt="Apples">
+        <p>Fresh Apples</p>
+        <p>80 rs/kg</p>
+      </div>
+      <div class="product-card">
+        <img src="carrot.jpg" alt="Carrots">
+        <p>Organic Carrots</p>
+        <p>40 rs/kg</p>
+      </div>
+      <div class="product-card">
+        <img src="milk.jpg" alt="Milk">
+        <p>Fresh Dairy Milk</p>
+        <p>50 rs/L</p>
+      </div>
+      <div class="product-card">
+        <img src="rice.jpg" alt="Rice">
+        <p>Organic Rice</p>
+        <p>90 rs/kg</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Dashboard Section -->
+  <section class="dashboard">
+    <h2>Real-Time Product Prices</h2>
+    <canvas id="priceChart"></canvas>
+  </section>
+
+  <!-- Registration Section -->
+  <section class="registration">
+    <h2>Farmer & Customer Registration</h2>
+    <div class="form-container">
+      <div class="farmer-registration">
+        <h3>Farmer Registration</h3>
+        <form>
+          <input type="text" placeholder="Name">
+          <input type="text" placeholder="Farm Location">
+          <input type="text" placeholder="Products Available">
+          <input type="text" placeholder="Certifications">
+          <input type="text" placeholder="Bank Details">
+          <input type="text" placeholder="Contact Details">
+          <button type="submit">Register</button>
+        </form>
+      </div>
+      <div class="customer-registration">
+        <h3>Customer Registration</h3>
+        <form>
+          <input type="text" placeholder="Name">
+          <input type="text" placeholder="Delivery Address">
+          <input type="text" placeholder="Payment Preferences">
+          <input type="text" placeholder="Contact Details">
+          <button type="submit">Register</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="footer-content">
+      <p>About Us | Help Center | Contact Us | Terms & Conditions</p>
+    </div>
+  </footer>
+
+</body>
+</html>
